@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinyls Makes You Happier</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Source+Serif+Pro:ital@1&display=swap" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/logo.png">
+    <link rel="icon" type="image/png" sizes="32x32"  href="./img/logo.png">
+    <link rel="icon" type="image/png" sizes="16x16"  href="./img/logo.png">
+    <link rel="manifest"  href="./img/logo.png">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="./img/logo.png" class="logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="">All Vinyls</a></li>
+                    <li><a href="">Pop/Rap</a></li>
+                    <li><a href="">Rock</a></li>
+                    <li><a href="">Jazz</a></li>
+                </ul>
+            </nav>
+            <img src="./img/menu.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <h2>Vinyls Makes <br> You Happier</h2>
+                <h3>Records for every taste</h3>
+                <p>Listen and Enjoy</p>
+                <h4>Musical tableau</h4>
+                <button type="button">Buy Now<img src="./img/arrow.png"></button>
+            </div>
+            <div class="col-2">
+                <img src="./img/vinyls.png" class="vinyls">
+                <div class="color-box"></div>
+                <div class="add-btn">
+                    <img src="./img/add.png" alt="">
+                    <p><smal>Add to Cart</smal></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="social-links">
+            <img src="./img/fb.png" alt="">
+            <img src="./img/ig.png" alt="">
+            <img src="./img/tw.png" alt="">
+        </div>
+    </div>
+    <script>
+
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu(){
+
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "130px";
+            }
+            else
+            {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+
+    </script>
+</body>
+</html>
